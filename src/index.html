@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Dibrugarh Karate Do Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        @media (max-width: 640px) {
+            .hero-text {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 h-full w-64 bg-red-800 z-50 shadow-lg">
+        <div class="p-4">
+            <button id="close-menu" class="text-white text-2xl float-right">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="clear-both"></div>
+            <div class="flex flex-col space-y-4 mt-8">
+                <a href="index.html" class="text-white font-bold py-2">Home</a>
+                <a href="#about" class="text-gray-200 hover:text-white py-2">About Us</a>
+                <a href="./classes.html" class="text-gray-200 hover:text-white py-2">Classes</a>
+                <a href="instructer.html" class="text-gray-200 hover:text-white py-2">Instructors</a>
+                <a href="#contact" class="text-gray-200 hover:text-white py-2">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-red-800 shadow-lg fixed w-full top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <img src="./assets/logo.jpg" alt="Logo" class="h-10 w-10 sm:h-12 sm:w-12 rounded-full">
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-white">South Dibrugarh Karate Do Academy</h1>
+                        <p class="text-xs sm:text-sm text-gray-200">Dibrugarh</p>
+                    </div>
+                </div>
+                <button id="menu-toggle" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link relative py-2 text-gray-200 hover:text-white transition-colors group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
+                    </a>
+                    <a href="#about" class="nav-link relative py-2 text-gray-200 hover:text-white transition-colors group">
+                        About Us
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
+                    </a>
+                    <a href="classes.html" class="nav-link relative py-2 text-gray-200 hover:text-white transition-colors group">
+                        Classes
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
+                    </a>
+                    <a href="instructer.html" class="nav-link relative py-2 text-gray-200 hover:text-white transition-colors group">
+                        Instructors
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
+                    </a>
+                    <a href="#contact" class="nav-link relative py-2 text-gray-200 hover:text-white transition-colors group">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-white transform scale-x-0 transition-transform origin-left group-hover:scale-x-100"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-[90vh] overflow-hidden mt-16">
+        <div id="slider" class="h-full">
+            <!-- Images will be inserted here by JavaScript -->
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center">
+            <div class="px-4">
+                <h1 class="hero-text text-4xl md:text-6xl font-bold text-white mb-4">Welcome to SDKA</h1>
+                <p class="text-lg sm:text-xl text-white">Train with discipline, grow with dedication</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 sm:py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-red-800">Our Journey</h3>
+                    <p class="text-gray-600">Founded in 2013, South Dibrugarh Karate Do Academy has grown from a small group of enthusiastic students into a thriving community dedicated to the art of karate. Our commitment to excellence and traditional values has attracted individuals from all walks of life.</p>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+                    <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-red-800">Our Achievements</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Multiple State Champions</li>
+                        <li>9+ Black Belt Holders</li>
+                        <li>Numerous Competition Medals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Facilities Section -->
+     <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Facilities</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                    <img src="/g4.jpg" alt="Kata Training" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-red-800">Advanced Kata Training</h3>
+                        <p class="text-gray-600 mt-2">Master the art of traditional forms</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                    <img src="/g2.jpg" alt="Kumite Training" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-red-800">Kumite Training</h3>
+                        <p class="text-gray-600 mt-2">Develop sparring techniques</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                    <img src="/g8.jpg" alt="Physical Training" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-red-800">Physical Training</h3>
+                        <p class="text-gray-600 mt-2">Build strength and endurance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Leadership Messages Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Messages from Leadership</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- President's Message -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="./assets/m1.png" alt="President" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Message from President</h3>
+                        <p class="text-gray-600 mb-4">Welcome to SDKA, where we foster discipline, respect, and excellence in martial arts with modern training methods. My vision for the South Dibrugarh Karate Do Academy is to see it thrive and succeed through the dedicated efforts of our skilled instructors. By providing proper training and guidance, we aim to ensure the continued success and growth of our club. Our goal is always to strive for the good of the SDK Academy, fostering an environment where our members can excel and achieve greatness. Together, we will build a legacy of excellence and pride for the academy.</p>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <i class="fas fa-user text-red-800"></i>
+                            <span class="font-medium">Mr.Surendranath Saikia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder's Message -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="./assets/Prof_1.jpeg" alt="Founder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Message from Founder</h3>
+                        <p class="text-gray-600 mb-4">In 2013, I founded the South Dibrugarh Karate Do Academy with a vision to create a community dedicated to the traditional art of karate. Over the past ten years, I have had the honor of serving this club and witnessing its growth and achievements. My unwavering commitment is to continue striving for the improvement of our academy, ensuring we bring out the best in every member. With our dedicated team of instructors and the relentless spirit of our students, we will elevate the standards of our club and create a legacy of excellence and pride for the SDK Academy.</p>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <i class="fas fa-user text-red-800"></i>
+                            <span class="font-medium">Mr.Naba Sharma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Secretary's Message -->
+                <div class="bg-white rounded-lg shadow-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="./assets/Prof_2.jpeg" alt="General Secretary" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Message from General Secretary</h3>
+                        <p class="text-gray-600 mb-4">As the General Secretary of the South Dibrugarh Karate Do Academy, my vision is to see each and every member actively participating and making the most of the opportunities available. I strongly encourage everyone to attend practice sessions regularly and commit to their training. By working together and supporting one another, we can achieve remarkable progress and elevate the standards of our club. Let's make our academy a place of growth, discipline, and excellence, where every member can reach their full potential and contribute to the collective success of the SDK Academy.</p>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <i class="fas fa-user text-red-800"></i>
+                            <span class="font-medium">Mr.Krishna Dutta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with enhanced mobile responsiveness -->
+    <section id="contact" class="py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-red-800 text-xl"></i>
+                            <p class="text-sm sm:text-base">Sonowal Kachari Sanskritik Bhawan, Dibrugarh</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-red-800 text-xl"></i>
+                            <p class="text-sm sm:text-base">7002532446 / 9365106985</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-red-800 text-xl"></i>
+                            <p class="text-sm sm:text-base">contact@sdka.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2 text-sm sm:text-base">Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-800 text-sm sm:text-base" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2 text-sm sm:text-base">Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-800 text-sm sm:text-base" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2 text-sm sm:text-base">Message</label>
+                            <textarea class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-red-800 text-sm sm:text-base" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-900 transition-colors text-sm sm:text-base">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 sm:py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-center space-x-6 mb-4 sm:mb-6">
+                <a href="https://instagram.com/sdka_dibrugarh" target="_blank" class="hover:text-red-500">
+                    <i class="fab fa-instagram text-xl sm:text-2xl"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="hover:text-red-500">
+                    <i class="fab fa-facebook text-xl sm:text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-center text-xs sm:text-sm text-gray-400">
+                © 2024 South Dibrugarh Karate Do Academy. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking a link
+        Array.from(mobileMenuLinks).forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Image slider functionality
+        const images = ['./assets/g1.jpg', './assets/g2.jpg', './assets/slide_4.jpeg', './assets/slide_1.jpeg'];
+        let currentSlide = 0;
+        const slider = document.getElementById('slider');
+
+        function createSlide(src, index) {
+            const div = document.createElement('div');
+            div.className = `absolute inset-0 transition-opacity duration-1000 ${index === 0 ? 'opacity-100' : 'opacity-0'}`;
+            div.innerHTML = `<img src="${src}" alt="Slide ${index + 1}" class="w-full h-full object-cover">`;
+            return div;
+        }
+
+        // Initialize slider
+        images.forEach((src, index) => {
+            slider.appendChild(createSlide(src, index));
+        });
+
+        // Auto-advance slides
+        setInterval(() => {
+            const slides = slider.children;
+            slides[currentSlide].classList.remove('opacity-100');
+            slides[currentSlide].classList.add('opacity-0');
+            currentSlide = (currentSlide + 1) % images.length;
+            slides[currentSlide].classList.remove('opacity-0');
+            slides[currentSlide].classList.add('opacity-100');
+        }, 5000);
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
